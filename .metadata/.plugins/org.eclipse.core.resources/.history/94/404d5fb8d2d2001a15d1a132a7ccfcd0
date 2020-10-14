@@ -1,0 +1,23 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Calculos;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		Calculos n1, n2;
+		n1 = new Calculos();
+		n2 = new Calculos();
+		
+		System.out.println("Digite o numero 1");
+		n1.n1 = scan.nextDouble();
+		System.out.println("Digiteo  numero 2");
+		n1.n1 = scan.nextDouble();
+		
+		System.out.println(n1"+"+n2+"="n1.Soma());
+	}
+
+}

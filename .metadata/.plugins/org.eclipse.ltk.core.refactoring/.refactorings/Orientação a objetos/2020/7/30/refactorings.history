@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;aaplication&apos; to &apos;aplication&apos;&#x0D;&#x0A;- Original project: &apos;Orientação a objetos&apos;&#x0D;&#x0A;- Original element: &apos;Orientação a objetos/src/aaplication&apos;&#x0D;&#x0A;- Renamed element: &apos;Orientação a objetos/src/aplication&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;aaplication&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;aaplication" name="aplication" qualified="false" references="true" stamp="1595562551193" textual="false" version="1.0"/>
+</session>

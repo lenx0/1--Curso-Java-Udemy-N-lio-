@@ -1,0 +1,16 @@
+package entities;
+
+import java.util.Scanner;
+
+public class Funcionario {
+	public String nome;
+	public double salarioBruto, impostos;
+	
+	public double SalarioLiquido() {
+		return salarioBruto - impostos;
+	}
+	
+	public void 
+	
+
+}

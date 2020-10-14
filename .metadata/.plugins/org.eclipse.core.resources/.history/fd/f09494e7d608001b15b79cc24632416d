@@ -1,0 +1,35 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Aluno;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		Aluno aluno = new Aluno();
+		
+		
+		
+		System.out.println("Digite o nome do aluno:");
+		aluno.nome = scan.next();
+		
+		System.out.println("Digite a nota do primeiro trimestre: ");
+		aluno.nota1 = scan.nextDouble();
+		System.out.println("Digite a nota do segundo trimestre: ");
+		aluno.nota2 = scan.nextDouble();
+		System.out.println("Digite a nota do terceiro trimestre: ");
+		aluno.nota3 = scan.nextDouble();
+		
+		System.out.println("Nota final: "+aluno.notaFinal());
+		if(aluno.notaFinal() <= 60) {
+			System.out.println("REPROVADO por: "+aluno.notaFaltando());
+		}else {
+				System.out.println("APROVADO!!!");
+			}
+		}
+
+	}
+
+}

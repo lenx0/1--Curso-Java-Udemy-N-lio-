@@ -1,0 +1,13 @@
+package util;
+
+import entities.Dollar;
+
+public class CurrencyConverter {
+	
+	public double calculoFinal(double quantidade) {
+		return quantidade * Dollar.valorDollar;
+	}
+	
+	
+
+}

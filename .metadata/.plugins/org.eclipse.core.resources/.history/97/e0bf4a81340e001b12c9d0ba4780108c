@@ -1,0 +1,12 @@
+package util;
+
+
+public class CurrencyConverter {
+	
+	public static double calculoFinal() {
+		return quantidade * Dolla
+	}
+	
+	
+
+}

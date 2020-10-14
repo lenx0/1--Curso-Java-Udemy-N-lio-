@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+D:\Thiago Development\Projetos Eclipse\.metadata\.plugins\org.eclipse.jdt.core
+3613887326.index
+1606232780.index
+4284464426.index
+3715297884.index
+1898901482.index
+3421261410.index
+1657330681.index

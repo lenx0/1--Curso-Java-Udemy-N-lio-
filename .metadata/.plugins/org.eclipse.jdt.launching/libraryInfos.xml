@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="C:\Users\Thiago\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932" version="14.0.2"/>
+    <libraryInfo home="D:\Thiago Development\Nova pasta" version="1.8.0_251">
+        <bootpath>
+            <entry path="D:\Thiago Development\Nova pasta\lib\resources.jar"/>
+            <entry path="D:\Thiago Development\Nova pasta\lib\rt.jar"/>
+            <entry path="D:\Thiago Development\Nova pasta\lib\sunrsasign.jar"/>
+            <entry path="D:\Thiago Development\Nova pasta\lib\jsse.jar"/>
+            <entry path="D:\Thiago Development\Nova pasta\lib\jce.jar"/>
+            <entry path="D:\Thiago Development\Nova pasta\lib\charsets.jar"/>
+            <entry path="D:\Thiago Development\Nova pasta\lib\jfr.jar"/>
+            <entry path="D:\Thiago Development\Nova pasta\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="D:\Thiago Development\Nova pasta\lib\ext"/>
+            <entry path="C:\Windows\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="D:\Thiago Development\Nova pasta\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Users\Thiago\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932\jre" version="14.0.2"/>
+</libraryInfos>

@@ -1,0 +1,11 @@
+package util;
+
+public class CurrencyConverter {
+	public static final valor;
+	
+	
+	public double valorFinalDolar() {
+			return valor += valor * 6 / 100;
+	}
+
+}

@@ -1,0 +1,32 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Employe;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		Employe employe = new Employe();
+		
+		System.out.println("Digite o nome do funcionário: ");
+		employe.name = scan.next();
+		System.out.println("Digite o salário bruto: ");
+		employe.grosssalary = scan.nextDouble();
+		System.out.println("Digite o valor total dos impostos: ");
+		employe.tax = scan.nextDouble();
+		
+		System.out.println("Dados do funcionário: ");
+		System.out.println("Nome: "+employe.name);
+		System.out.println("Salário líquido: "+employe.netSalary());
+		System.out.println("/n");
+		System.out.println("Agora digite uma porcentagem para aumentar o salário: ");
+		employe.
+		
+	
+
+	}
+
+}

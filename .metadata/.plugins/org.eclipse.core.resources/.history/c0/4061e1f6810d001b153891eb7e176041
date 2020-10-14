@@ -1,0 +1,57 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Pokemon;
+
+public class Main {
+
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		Pokemon pokemon = new Pokemon();
+		System.out.println("Bem vindo! \nEscolha uma opção:"
+				+ "\n[1] - JOGAR"
+				+ "\n[2] - SAIR");
+		int menu = scan.nextInt();
+		while(menu == 1) {
+		
+		System.out.println("Qual pokémon deseja? "
+				+ "\n[1] - Charmander"
+				+ "\n[2] - Bulbasaur"
+				+ "\n[3] - Squirtle");
+		int escolha = scan.nextInt();
+		if(escolha == 1) {
+			System.out.println("Você está com Charmander.");
+			System.out.println("Você enfrentará Mewtwo! PREPARE-SE");
+			System.out.println("Escolha um ataque:"
+					+ "\n[1] Ember"
+					+ "\n[2] Flame Tower"
+					+ "\n[3] Inferno");
+			if(escolha == 1) {
+				System.out.println("Charmander atacou com Ember causando dano de: ");
+			}
+		
+		
+		
+		
+		
+		}else if(escolha == 2){
+				System.out.println("Você está com Bulbasaur.");
+			}else if(escolha == 3) {
+				System.out.println("Você está com Squirtle");
+			}else {
+				System.out.println("Opção inválida!");
+			}
+		
+		
+		
+		
+		}
+		
+		
+		
+		
+	}
+}

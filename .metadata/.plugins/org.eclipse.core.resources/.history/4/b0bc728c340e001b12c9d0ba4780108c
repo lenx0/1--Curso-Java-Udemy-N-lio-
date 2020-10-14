@@ -1,0 +1,9 @@
+package entities;
+
+public class Dollar {
+	public double valorDollar;
+	
+	public double valorFinalDolar() {
+		return valorDollar += valorDollar * 6 / 100;
+	}
+}

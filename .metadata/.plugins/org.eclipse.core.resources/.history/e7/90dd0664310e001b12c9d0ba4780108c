@@ -1,0 +1,11 @@
+package entities;
+
+public class Dollar {
+	public double valor;
+	
+	
+	public double valorFinalDolar() {
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package entities;
+
+public class Charmander {
+	public double vida = 5000
+	public double ataque = 500;
+	public double defesa = 
+	public double agilidade;
+
+	
+	
+	
+	public double charmanderEmber() {
+		double ember = 30;
+		return ember + ataque + agilidade - this.defesaMewtwo;
+		
+	}
+}
+
+
+

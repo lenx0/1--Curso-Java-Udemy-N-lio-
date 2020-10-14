@@ -1,0 +1,17 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Employe;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner scan = new scanner(System.in)
+	
+		
+	
+
+	}
+
+}

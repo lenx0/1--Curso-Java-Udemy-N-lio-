@@ -1,0 +1,20 @@
+package entities;
+
+import java.util.Scanner;
+
+public class Employe {
+	public String name;
+	public double grosssalary, tax;
+	
+	public double NetSalary() {
+		return grosssalary - tax;
+	}
+	
+	public void IncreaseSalary() {
+		double percentage;
+		return grosssalary * percentage;
+		
+	}
+	
+
+}
