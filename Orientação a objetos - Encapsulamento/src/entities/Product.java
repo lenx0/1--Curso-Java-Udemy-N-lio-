@@ -27,14 +27,17 @@ public class Product {
 		this.name = name;
 	}
 	
-	public double getPrice() {
+	public double getPrice() {//permite acessar o valor do produto.
 		return price;
 	}
 	
-	public void setPrice(double price) {
+	public void setPrice(double price) {//permite alterar o valor do produto.
 		this.price = price;
 	}
 	
+	public int getQuantity() {//não colocaremos o set pois a quantidade só pode ser alterada por entrada e saída, para proteger a integritade do software.
+		return quantity;
+	}
 	public double totalValueInStock() {
 		return price * quantity;
 	}
