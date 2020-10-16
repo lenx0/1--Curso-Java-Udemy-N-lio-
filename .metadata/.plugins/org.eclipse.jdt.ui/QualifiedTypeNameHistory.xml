@@ -6,4 +6,6 @@
     <fullyQualifiedTypeName name="util.CurrencyConverter"/>
     <fullyQualifiedTypeName name="util.Calculo"/>
     <fullyQualifiedTypeName name="entities.Product"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.awt.desktop.ScreenSleepEvent"/>
 </qualifiedTypeNameHistroy>

@@ -17,14 +17,15 @@ public class Program {
 		System.out.println("Deseja iniciar a conta com algum depósito?\n" + "[1] - SIM\n" + "[2] - NÃO\n");
 		int escolha = scan.nextInt();
 		double valorDeposito = 0;
+		double valorDepositoIni = 0;
 		if (escolha == 1) {
 			System.out.println("Entre com o valor de depósito");
-			valorDeposito = scan.nextDouble();
+			valorDepositoIni = scan.nextDouble();
 		} else {
 			System.out.println("Você depositou: R$00,00");
 		}
 
-		Banco banco = new Banco(numConta, nome, valorDeposito);
+		Banco banco = new Banco(numConta, nome, valorDepositoIni);
 
 		boolean loop = true;
 		while (loop == true) {

@@ -5,11 +5,16 @@ public class Banco {
 	private String nome;
 	private double saldo;
 	
-	public Banco(int numConta, String nome, double valorDeposito) {
+	public Banco(int numConta, String nome) {
+		this.CONTA = numConta;
+		this.nome = nome;
+	}
+	
+	public Banco(int numConta, String nome, double valorDepositoIni) {
 		super();
 		this.CONTA = numConta;
 		this.nome = nome;
-		this.saldo = valorDeposito;
+		deposito(valorDepositoIni);
 	}
 	
 	public String getNome() {
@@ -20,24 +25,21 @@ public class Banco {
 		this.nome += nome;
 	}
 	
-	public double getSaldo() {
+	public double getSaldo() { // setSaldo não foi colocado pois ele só pode ser alterado pelo método deposito ou saque!
 		return saldo;
 	}
 	
-	public void setSaldo(double saldo) {
-		this.saldo += saldo;
-	}
 	
 	public int getConta() {
 		return CONTA;
 	}
 	
-	public double deposito(double valorDeposito) {
-		return saldo += valorDeposito;
+	public void deposito(double valorDeposito) {//VOID porque o SALDO que está sendo alterado.
+		saldo += valorDeposito;
 	}
 	
-	public double saque(double valorSaque) {
-		return saldo -= (valorSaque + 5);
+	public void saque(double valorSaque) {//VOID PORQUE O SALTO ESTÁ SENDO ALTERADO TAMBÉM.
+		saldo -= valorSaque + 5;
 	}
 	
 	
