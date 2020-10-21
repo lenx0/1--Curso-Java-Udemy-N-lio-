@@ -1,9 +1,0 @@
-package entities;
-
-public class Mewtwo {
-	public double vida = 50000;
-	public double ataque = 3000;
-	public double defesa = ;
-	public double agilidade = 15;
-
-}

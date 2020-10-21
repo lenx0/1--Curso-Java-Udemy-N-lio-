@@ -1,7 +1,12 @@
 package moves;
 
 public class Ember {
-	private static double dano = 80;
-	
+	private double dano = 80;
+	private double danoFinal;
 
+	
+	
+	public danoEmber() {
+		this.dano += danoFinal
+	}
 }

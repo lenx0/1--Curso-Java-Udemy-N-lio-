@@ -1,66 +1,39 @@
 package application;
 
+import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Banco;
+import entities.Rent;
+import entities.Rent;
 
 public class Program {
 
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
 		Scanner scan = new Scanner(System.in);
 		
-		double valorSaque;
-		System.out.println("Informe o número da conta");
-		int numConta = scan.nextInt();
-		System.out.println("Informe o nome do titular da conta");
-		String nome = scan.next();
-		System.out.println("Deseja iniciar a conta com algum depósito?\n" + "[1] - SIM\n" + "[2] - NÃO\n");
-		int escolha = scan.nextInt();
-		double valorDeposito = 0;
-		if (escolha == 1) {
-			System.out.println("Entre com o valor de depósito");
-			valorDeposito = scan.nextDouble();
-		} else {
-			System.out.println("Você depositou: R$00,00");
+		System.out.println("Quantos quartos deseja alugar?");
+		int n = scan.nextInt();
+		Rent[] vect = new Rent[9];
+		for(int i = 0; i<n; i++) {
+			System.out.println("Aluguel número: #"+i);
+			System.out.println("Digite o nome: ");
+			String name = scan.next();
+			System.out.println("Digite o email: ");
+			String email = scan.next();
+			System.out.println("Qual quarto deseja?");
+			int room = scan.nextInt();
+			vect[i] = new Rent(name, email, room);
 		}
-
-		Banco banco = new Banco(numConta, nome, valorDeposito);
-
-		boolean loop = true;
-		while (loop == true) {
-			System.out.println("==================================");
-			System.out.println("Dados atualizados:");
-			System.out.println("Numero da conta: " + banco.getConta());
-			System.out.println("Nome do titular: " + banco.getNome());
-			System.out.println("Saldo: R$" + banco.getSaldo());
-			System.out.println("==================================");
-			System.out.println(
-					"O que deseja fazer?\n" 
-							+ "[1] - SACAR\n" 
-							+ "[2] - DEPOSITAR\n" 
-							+ "[3] - CONSULTAR SALDO\n"
-							+ "AVISO: taxa de saque: R$5,00\n"
-							+ "==================================");
-			escolha = scan.nextInt();
-			if (escolha == 1) {
-				System.out.println("Quanto deseja sacar de sua conta?\n"
-						);
-				valorSaque = scan.nextDouble();
-				banco.saque(valorSaque);
-				System.out.println("Você sacou: R$" + valorSaque);
-			} else if (escolha == 2) {
-				System.out.println("Qual o valor do depósito?\n");
-				valorDeposito = scan.nextDouble();
-				banco.deposito(valorDeposito);
-				System.out.println("Você acaba de depositar R$"+valorDeposito);
-
-			}else if (escolha == 3) {
-				System.out.println("");
-			}else {
-				System.out.println("Opção inválida, tente novamente!");
+	
+		for(int i = 0; i<n; i++) {
+			if(vect[i] != null) {
+				System.out.println("Quartos alugados:");
+				System.out.println(vect[i]);
 			}
-				
-
 		}
+		
+	
 	}
+
 }
