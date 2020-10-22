@@ -6,11 +6,13 @@
     <fullyQualifiedTypeName name="util.Calculo"/>
     <fullyQualifiedTypeName name="java.awt.desktop.ScreenSleepEvent"/>
     <fullyQualifiedTypeName name="entities.Account"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="entities.Conta"/>
     <fullyQualifiedTypeName name="java.text.ParseException"/>
     <fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
     <fullyQualifiedTypeName name="entities.Product"/>
     <fullyQualifiedTypeName name="entities.Rent"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
