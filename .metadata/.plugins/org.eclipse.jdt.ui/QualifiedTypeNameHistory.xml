@@ -9,10 +9,19 @@
     <fullyQualifiedTypeName name="entities.Conta"/>
     <fullyQualifiedTypeName name="java.text.ParseException"/>
     <fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
-    <fullyQualifiedTypeName name="entities.Product"/>
     <fullyQualifiedTypeName name="entities.Rent"/>
-    <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="entities.Worker"/>
+    <fullyQualifiedTypeName name="entities.Department"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="javax.swing.text.SimpleAttributeSet"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="entities.HourContract"/>
+    <fullyQualifiedTypeName name="java.util.SortedMap"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="entities.Product"/>
     <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

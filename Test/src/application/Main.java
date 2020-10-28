@@ -1,5 +1,7 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -8,36 +10,34 @@ public class Main {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Digite o tamanho da linha");
-		int L = scan.nextInt();
-		System.out.println("Digite o tamanho da coluna:");
-		int C = scan.nextInt();
-		int[][] mat = new int[L][C];
-		System.out.println("Digite agora os valores da matriz");
-		for (int i = 0; i < mat.length; i++) {
-			for (int j = 0; j < mat[i].length; j++) {
-				mat[i][j] = scan.nextInt();
+		
+		
+		System.out.println("Qual seu nome?");
+		String usuario = scan.next();
+		System.out.println("Bem vindo a pokedex treinador "+usuario+" !!!");
+		
+		boolean run = true;
+		List<String> list = new ArrayList<>();
+		while (run == true) {
+			System.out.println("O que deseja fazer?"
+					+ "[1] - CADASTRAR POKÉMON"
+					+ "[2] - EDITAR POKÉMON"
+					+ "[3] - APAGAR POKÉMON"
+					+ "[4] - VER LISTA"
+					+ "[5] - SAIR");
+			int menu = scan.nextInt();
+			if (menu == 1) {
+				System.out.println("");
 			}
+		
+		
+		
+		
+		
+		
+		
+		
 		}
-		System.out.println("Digite o número que deseja encontrar na matriz");
-		int N = scan.nextInt();
-		for (int i = 0; i < mat.length; i++)
-			for (int j = 0; j < mat[i].length; j++) {
-				if (mat[i][j] == N) {
-					System.out.println("Posição: " + i + "," + j);
-					if (j > 0) {
-						System.out.println("LEFT: " + mat[i][j - 1]);
-					}
-					if (j > 0) {
-						System.out.println("RIGHT: " + mat[i][j + 1]);
-					}
-					if (i > 0) {
-						System.out.println("UP: " + mat[i - 1][j]);
-					}
-					if (i < mat.length - 1) {
-						System.out.println("DOWN: " + mat[i + 1][j]);
-					}
-				}
-			}
+		
 	}
 }
