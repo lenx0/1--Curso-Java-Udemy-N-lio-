@@ -3,37 +3,37 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Rent;
-import entities.Rent;
+import entities.Department;
+import entities.Worker;
+import entities.enums.WorkerLevel;
 
 public class Program {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner scan = new Scanner(System.in);
-		
-		System.out.println("Quantos quartos deseja alugar?");
+
+		System.out.print("Enter department's name:");
+		String departmentName = scan.next();
+		System.out.print("Enter worker data:");
+		System.out.print("Name:");
+		String workerName = scan.next();
+		System.out.print("Level:");
+		String workerLevel = scan.next();
+		System.out.print("Base salary:");
+		Double baseSalary = scan.nextDouble();
+		Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary,
+				new Department(departmentName));
+		System.out.print("How many contracts to this worker?");
 		int n = scan.nextInt();
-		Rent[] vect = new Rent[9];
-		for(int i = 0; i<n; i++) {
-			System.out.println("Aluguel número: #"+i);
-			System.out.println("Digite o nome: ");
-			String name = scan.next();
-			System.out.println("Digite o email: ");
-			String email = scan.next();
-			System.out.println("Qual quarto deseja?");
-			int room = scan.nextInt();
-			vect[i] = new Rent(name, email, room);
+		for (int i = 1; i <= n; i++) {
+			System.out.println("Enter contract #"+i);
+			System.out.println("Date (DD/MM/YYYY)");
+			
+			
+			
+			
 		}
-	
-		for(int i = 0; i<n; i++) {
-			if(vect[i] != null) {
-				System.out.println("Quartos alugados:");
-				System.out.println(vect[i]);
-			}
-		}
-		
-	
 	}
 
 }
