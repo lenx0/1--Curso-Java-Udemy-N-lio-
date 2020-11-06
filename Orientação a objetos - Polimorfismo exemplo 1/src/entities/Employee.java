@@ -4,7 +4,7 @@ public class Employee {
 	protected String name;
 	protected Integer hours;
 	protected Double valuePerHour;
-	
+
 	public Employee() {
 		super();
 	}
@@ -40,19 +40,8 @@ public class Employee {
 		this.valuePerHour = valuePerHour;
 	}
 
-	public Double  payment() {
+	public Double payment() {
 		return valuePerHour * hours;
 	}
-	
-	
-	public String toString() {
-		StringBuilder sb;
-		sb.append("PAYMENTS:");
-		sb.append(b)
-	}
-	
-	
-	
-	
-	
+
 }

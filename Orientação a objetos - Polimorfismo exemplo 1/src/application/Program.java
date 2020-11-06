@@ -22,19 +22,19 @@ public class Program {
 			System.out.println("Employee #" + i + " data:");
 			System.out.print("Outsourced (y/n)?");
 			char c = scan.next().charAt(0);
-				System.out.print("Name: ");
-				String name = scan.next();
-				System.out.print("Hours: ");
-				Integer hours = scan.nextInt();
-				System.out.print("Value per hour: ");
-				Double valuePerHour = scan.nextDouble();
-				if (c == 'y' || c == 'Y') {
-					System.out.print("Additional charge: ");
-					Double additionalCharge = scan.nextDouble();
-					Employee emp = new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge);
-				//list.add(new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge); >> outra forma de instanciar.
-
-		
+			System.out.print("Name: ");
+			String name = scan.next();
+			System.out.print("Hours: ");
+			Integer hours = scan.nextInt();
+			System.out.print("Value per hour: ");
+			Double valuePerHour = scan.nextDouble();
+			if (c == 'y') {
+				System.out.print("Additional charge: ");
+				Double additionalCharge = scan.nextDouble();
+				Employee emp = new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge);
+				list.add(emp);
+				// list.add(new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge);
+				// >> outra forma de instanciar.
 
 			} else {
 				Employee emp = new Employee(name, hours, valuePerHour);
@@ -42,14 +42,12 @@ public class Program {
 
 			}
 
-
 		}
-	
+
 		System.out.println("PAYMENTS:");
-		for(Employee emp : list) {
+		for (Employee emp : list) {
 			System.out.println(emp.getName() + " - $ " + String.format("%.2f", emp.payment()));
 		}
 	}
-	
-	
+
 }
