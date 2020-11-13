@@ -5,7 +5,7 @@ public class Individual extends Account {
 	protected Double taxToOpen = 50.00;
 
 	public Individual() {
-		
+		super();
 	}
 
 	public Individual(Integer number, String name, Double balance, Double iniDeposit, Double withdrawLimit,
@@ -23,4 +23,12 @@ public class Individual extends Account {
 		this.taxToOpen = taxToOpen;
 	}
 
+	public String toString() {
+		return "\nNúmero: "
+				 +number
+				 +"\nNome: "
+				 +name
+				 +"\nSaldo: $"
+				 +getBalance();
+	}
 }

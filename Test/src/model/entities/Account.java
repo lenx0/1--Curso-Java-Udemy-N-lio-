@@ -1,10 +1,10 @@
 package model.entities;
 
 public abstract class Account {
-	protected Integer number;
-	protected String name;
+	protected static Integer number;
+	protected static String name;
 	protected Double balance;
-	protected Double iniDeposit;
+	protected static Double iniDeposit;
 	protected Double withdrawLimit;
 	protected Double depositLimit;
 	
@@ -78,13 +78,10 @@ public abstract class Account {
 				+ "[6]-Sair\n");
 	}
 	
-	public String toString() {
-		return "Número: "
-			   +number
-			   +", Nome: "
-			   +name
-			   +", Saldo: $"
-			   +balance;
-			   
+	public void withdraw(double amount) {
+		this.balance -= amount;
 	}
+	
+	
+
 }

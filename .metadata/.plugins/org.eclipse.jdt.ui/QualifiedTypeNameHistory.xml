@@ -39,16 +39,17 @@
     <fullyQualifiedTypeName name="entities.LegalPerson"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="entities.Taxpayer"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="entities.Reservation"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.text.ParseException"/>
     <fullyQualifiedTypeName name="model.exceptions.DomainException"/>
     <fullyQualifiedTypeName name="java.awt.Menu"/>
-    <fullyQualifiedTypeName name="model.entities.Account"/>
     <fullyQualifiedTypeName name="model.entities.Client"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="model.entities.Individual"/>
     <fullyQualifiedTypeName name="model.entities.Business"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="model.entities.Account"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

@@ -22,4 +22,12 @@ public class Business extends Account {
 		this.taxToOpen = taxToOpen;
 	}
 
+	public String toString() {
+		return "\nNúmero: "
+			   +number
+			   +"\nNome: "
+			   +name
+			   +"\nSaldo: $"
+			   +balance;
+	}
 }
