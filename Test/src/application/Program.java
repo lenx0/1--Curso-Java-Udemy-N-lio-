@@ -20,18 +20,18 @@ public class Program extends Account {
 
 		List<Account> list = new ArrayList<>();
 
-		System.out.println("Bem vindo ao simulador de conta bancï¿½ria\n"
+		System.out.println("Bem vindo ao simulador de conta bancária\n"
 				+ "===========================================\n" + "===========================================\n");
 		while (run == true) {
-			System.out.println("Escolha uma opï¿½ï¿½o");
+			System.out.println("Escolha uma opção");
 			Account.menu();
 			int menu = scan.nextInt();
 
 			if (menu == 1) {
 				System.out.println("Prencha os dados da conta");
-				System.out.println("A conta ï¿½ Individual ou Business? (i/b)");
+				System.out.println("A conta é Individual ou Business? (i/b)");
 				char c = scan.next().charAt(0);
-				System.out.print("Nï¿½mero da conta: ");
+				System.out.print("Número da conta: ");
 				Integer number = scan.nextInt();
 				System.out.print("Nome do titular: ");
 				String name = scan.next();
@@ -47,7 +47,7 @@ public class Program extends Account {
 						System.out.print("Digite o valor para deposito inicial: ");
 						double iniDeposit = scan.nextDouble();
 						if (iniDeposit > depositLimit) {
-							System.out.println("Deposito nï¿½o autorizado, fora do limite!");
+							System.out.println("Deposito não autorizado, fora do limite!");
 							run = true;
 						} else {
 							if (c == 'i') {
@@ -82,13 +82,37 @@ public class Program extends Account {
 				}
 
 			} else if (menu == 2) {
-				System.out.print("Digite o nï¿½mero da conta para realizar o saque: ");
+				System.out.print("Digite o número da conta para realizar o saque: ");
 				int number = scan.nextInt();
 				for (Account acc : list) {
-<<<<<<< HEAD
+
 					if (ind.getNumber() == number || bus.getNumber() == number) {
-							System.out.println("Dados da conta escolhida");
-							System.out.println(list.toString());
+						System.out.println("Dados da conta escolhida");
+						System.out.println(list.toString());
+						System.out.print("Digite o valor para saque: ");
+						amount = scan.nextDouble();
+
+						if (amount <= acc.getWithdrawLimit()) {
+							acc.withdraw(amount);
+							System.out.println("Saque de R$ " + String.format("%.2f", amount) + " realizado");
+							System.out.println("Update das contas");
+							System.out.println("==============================================");
+
+						} else {
+							System.out.println("==============================================");
+							System.out.println("Falha ao sacar, limite excedido.\n\n");
+						}
+
+					} else {
+						run = true;
+					}
+
+					if (acc.getNumber() == number) {
+
+						boolean depositing = true;
+
+						while (depositing) {
+							System.out.println("Seu limite de saque diario é de R$ " + acc.getWithdrawLimit());
 							System.out.print("Digite o valor para saque: ");
 							amount = scan.nextDouble();
 
@@ -96,45 +120,18 @@ public class Program extends Account {
 								acc.withdraw(amount);
 								System.out.println("Saque de R$ " + String.format("%.2f", amount) + " realizado");
 								System.out.println("Update das contas");
-								System.out.println("==============================================");
-
-
-							} else {
-								System.out.println("==============================================");
-								System.out.println("Falha ao sacar, limite excedido.\n\n");
-							}
-
-						}else {
-							run = true;
-						}
-
-=======
-					if (acc.getNumber() == number) {
-						
-
-						boolean depositing = true;
-						
-						while(depositing) {
-							System.out.println("Seu limite de saque diï¿½rio ï¿½ de R$ " + acc.getWithdrawLimit());
-							System.out.print("Digite o valor para saque: ");
-							amount = scan.nextDouble();
-							
-							if(amount <= acc.getWithdrawLimit()) {
-								acc.withdraw(amount);
-								System.out.println("Saque de R$ " + String.format("%.2f", amount) + " realizado");
-								System.out.println("Update das contas");
 								System.out.println("==============================================\n");
 								depositing = false;
-							}else {
+							} else {
 								System.out.println("==============================================\n");
 								System.out.println("Falha ao sacar, limite excedido.\n\n");
 							}
 						}
->>>>>>> 24422dd78c2f883cb8ef04354a2ec9abe15d5892
+
 					}
 					System.out.println("");
 				}
 			}
 		}
+	}
 }
-
