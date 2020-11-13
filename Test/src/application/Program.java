@@ -85,22 +85,32 @@ public class Program extends Account {
 				System.out.print("Digite o número da conta para realizar o saque: ");
 				number = scan.nextInt();
 				for (Account acc : list) {
-					if (list.contains(number)) {
+					if (ind.getNumber() == number || bus.getNumber() == number) {
+							System.out.println("Dados da conta escolhida");
+							System.out.println(list.toString());
+							System.out.print("Digite o valor para saque: ");
+							amount = scan.nextDouble();
 
-						System.out.println("Seu limite de saque diário é de R$ " + acc.getWithdrawLimit());
-						System.out.print("Digite o valor para saque: ");
-						amount = scan.nextDouble();
-						acc.withdraw(amount);
-						System.out.println("Saque de R$ " + String.format("%.2f", amount) + " realizado");
-						System.out.println("Update das contas");
-						System.out.println("==============================================");
+							if (amount <= acc.getWithdrawLimit()) {
+								acc.withdraw(amount);
+								System.out.println("Saque de R$ " + String.format("%.2f", amount) + " realizado");
+								System.out.println("Update das contas");
+								System.out.println("==============================================");
 
-						System.out.println(acc.toString() + "\n");
+
+							} else {
+								System.out.println("==============================================");
+								System.out.println("Falha ao sacar, limite excedido.\n\n");
+							}
+
+						}else {
+							run = true;
+						}
+
 					}
+					System.out.println("");
 				}
 			}
-			System.out.println("");
 		}
-
-	}
 }
+
