@@ -82,6 +82,5 @@ public abstract class Account {
 		this.balance -= amount;
 	}
 	
-	
 
 }
