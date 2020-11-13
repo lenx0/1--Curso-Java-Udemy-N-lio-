@@ -85,18 +85,19 @@ public class Program extends Account {
 				System.out.print("Digite o número da conta para realizar o saque: ");
 				number = scan.nextInt();
 				for (Account acc : list) {
+					if (list.contains(number)) {
 
-					System.out.println("Seu limite de saque diário é de R$ " + acc.getWithdrawLimit());
-					System.out.print("Digite o valor para saque: ");
-					amount = scan.nextDouble();
-					acc.withdraw(amount);
-					System.out.println("Saque de R$ " + String.format("%.2f", amount) + " realizado");
-					System.out.println("Update das contas");
-					System.out.println("==============================================");
+						System.out.println("Seu limite de saque diário é de R$ " + acc.getWithdrawLimit());
+						System.out.print("Digite o valor para saque: ");
+						amount = scan.nextDouble();
+						acc.withdraw(amount);
+						System.out.println("Saque de R$ " + String.format("%.2f", amount) + " realizado");
+						System.out.println("Update das contas");
+						System.out.println("==============================================");
 
-					System.out.println(acc.toString() + "\n");
+						System.out.println(acc.toString() + "\n");
+					}
 				}
-
 			}
 			System.out.println("");
 		}
