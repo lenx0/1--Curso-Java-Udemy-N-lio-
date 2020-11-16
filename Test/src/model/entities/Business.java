@@ -22,6 +22,15 @@ public class Business extends Account {
 		this.taxToOpen = taxToOpen;
 	}
 
+	
+	public void withdraw(double amount) {
+		this.balance -= amount;
+	}
+	
+	public void deposit(double amount) {
+		this.balance += amount;
+	}
+	
 	public String toString() {
 		return "\nNúmero: "
 			   +number
@@ -30,4 +39,6 @@ public class Business extends Account {
 			   +"\nSaldo: $"
 			   +balance;
 	}
+	
+	
 }
