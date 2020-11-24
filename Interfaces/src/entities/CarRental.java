@@ -5,12 +5,12 @@ import java.util.Date;
 public class CarRental {
 	private Date start;
 	private Date finish;
-	
+
 	private Invoice invoice;
 	private Vehicle vehicle;
-	
+
 	public CarRental() {
-		
+
 	}
 
 	public CarRental(Date start, Date finish, Vehicle vehicle) {
@@ -51,6 +51,4 @@ public class CarRental {
 		this.vehicle = vehicle;
 	}
 
-	
-	
 }

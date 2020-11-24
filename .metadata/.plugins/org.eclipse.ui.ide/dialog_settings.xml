@@ -13,4 +13,17 @@
 		<item key="DIALOG_HEIGHT" value="580"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Thiago\Documents\Projetos\ws-eclipse\GameDevelopment-JAVA-master\Game_02"/>
+			<item value="C:\Users\Thiago\Documents\Projetos\ws-eclipse\GameDevelopment-JAVA-master"/>
+			<item value="C:\Users\Thiago\Documents\Projetos\ws-eclipse\zeldaa"/>
+			<item value="C:\Users\Thiago\Documents\Projetos\ws-eclipse\1--Curso-Java-Udemy-N-lio-\Zelda"/>
+			<item value="C:\Users\Thiago\Documents\Projetos\ws-eclipse\1--Curso-Java-Udemy-N-lio-\zelda_prototipo-master"/>
+		</list>
+	</section>
 </section>

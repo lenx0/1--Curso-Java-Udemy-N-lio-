@@ -7,19 +7,19 @@ public class RentalService {
 	private Double pricePerHour;
 	private Double pricePerDay;
 	
-	private TaxService bTs;
+	private TaxService taxService;
 
-	public RentalService(Double pricePerHour, Double pricePerDay, TaxService bTs) {
+	public RentalService(Double pricePerHour, Double pricePerDay, TaxService taxService) {
 		this.pricePerHour = pricePerHour;
 		this.pricePerDay = pricePerDay;
-		this.bTs = bTs;
+		this.taxService = taxService;
 	}
 	
 	
 	public void processInvoice(CarRental carRental) {
 		long instante1 = carRental.getStart().getTime();//armazena a data de saida do carro em milisegundos
 		long instante2 = carRental.getFinish().getTime();//armazena a data de entrada do carro em milisegundos
-		double hours = (double)(instante2 - instante1) / 1000 / 60 / 60;//variavel recebe a diferença entre os 2 tempos, depois converte de milisegundos para segundos, depois para minutos e depois horas
+		double hours = (double)(instante2 - instante1) / 1000 / 60 / 60;//variável recebe a diferença entre os 2 tempos, depois converte de milisegundos para segundos, depois para minutos e depois horas
 		double basicPayment;
 		if(hours <= 12.0) {
 			basicPayment = Math.ceil(hours) * pricePerHour;//Math.ceil arredonda o horario, era 16:10, ele arredonda para a próxima hora, no caso 17h.
@@ -28,7 +28,7 @@ public class RentalService {
 		}
 	
 		
-		double tax = bTs.tax(basicPayment);
+		double tax = taxService.tax(basicPayment);
 		
 		carRental.setInvoice(new Invoice(basicPayment, tax));
 		
