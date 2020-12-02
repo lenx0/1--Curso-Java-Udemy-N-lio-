@@ -3,7 +3,6 @@
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.jdt.ui.java"/>
 		</list>
 	</section>
 	<section name="SaveAsDialogSettings">
@@ -19,6 +18,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Thiago\Documents\Projetos\ws-eclipse\1--Curso-Java-Udemy-N-lio-\zelda"/>
 			<item value="C:\Users\Thiago\Documents\Projetos\ws-eclipse\GameDevelopment-JAVA-master\Game_02"/>
 			<item value="C:\Users\Thiago\Documents\Projetos\ws-eclipse\GameDevelopment-JAVA-master"/>
 			<item value="C:\Users\Thiago\Documents\Projetos\ws-eclipse\zeldaa"/>

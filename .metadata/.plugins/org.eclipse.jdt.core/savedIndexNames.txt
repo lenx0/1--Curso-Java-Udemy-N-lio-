@@ -1,7 +1,7 @@
 INDEX VERSION 1.131+C:\Users\Thiago\Documents\Projetos\ws-eclipse\1--Curso-Java-Udemy-N-lio-\.metadata\.plugins\org.eclipse.jdt.core
 3557359104.index
-623744792.index
 2582855482.index
+623744792.index
 4285752383.index
 1423766240.index
 2872757118.index
@@ -17,9 +17,8 @@ INDEX VERSION 1.131+C:\Users\Thiago\Documents\Projetos\ws-eclipse\1--Curso-Java-
 2828999946.index
 3809906546.index
 2034349280.index
-3076478058.index
-679118965.index
 1768129243.index
+679118965.index
 1379880018.index
 3025829027.index
 1895973360.index
@@ -54,6 +53,7 @@ INDEX VERSION 1.131+C:\Users\Thiago\Documents\Projetos\ws-eclipse\1--Curso-Java-
 4217088155.index
 369067715.index
 2879650496.index
+4088832729.index
 3378021847.index
 123318315.index
 1280040542.index
