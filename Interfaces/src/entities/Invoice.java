@@ -1,9 +1,12 @@
 package entities;
 
+
+//CLASSE DE PAGAMENTO
 public class Invoice {
 	private Double basicPayment;
 	private Double tax;
 
+	
 	public Invoice() {
 	}
 

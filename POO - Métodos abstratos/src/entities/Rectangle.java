@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 package entities;
 
 import entities.enums.Color;

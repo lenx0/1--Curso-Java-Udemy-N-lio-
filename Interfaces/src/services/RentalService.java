@@ -3,6 +3,8 @@ package services;
 import entities.CarRental;
 import entities.Invoice;
 
+
+//CLASSE DE SERVIÇO DE ALUGUEL
 public class RentalService {
 	private Double pricePerHour;
 	private Double pricePerDay;

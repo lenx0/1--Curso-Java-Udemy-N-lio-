@@ -1,0 +1,10 @@
+package model.entities;
+
+public abstract class Account {
+	protected Integer number;
+	protected String name;
+	protected Double balance;
+	
+	public Account() {
+	}
+}

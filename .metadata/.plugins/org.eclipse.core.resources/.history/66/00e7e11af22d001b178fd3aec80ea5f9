@@ -1,0 +1,8 @@
+package model.entities;
+
+public class IndividualAccount extends Account {
+	
+	
+	public IndividualAccount
+
+}

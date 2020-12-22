@@ -1,0 +1,13 @@
+package model.entities;
+
+public class IndividualAccount extends Account {
+	protected Double tax;
+	
+	
+	public IndividualAccount() {
+		
+	}
+
+	
+	
+}

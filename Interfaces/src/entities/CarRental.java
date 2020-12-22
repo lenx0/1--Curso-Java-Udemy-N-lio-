@@ -2,6 +2,8 @@ package entities;
 
 import java.util.Date;
 
+
+//CLASSE DE ALUGUEL DE CARRO
 public class CarRental {
 	private Date start;
 	private Date finish;

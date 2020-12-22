@@ -1,5 +1,8 @@
 package entities;
 
+
+
+//CLASSE VEÍCULO
 public class Vehicle {
 	private String model;
 

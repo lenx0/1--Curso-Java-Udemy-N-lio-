@@ -1,0 +1,7 @@
+package model.entities;
+
+public class CarRental {
+	private Date start;
+	private Date finish
+
+}
